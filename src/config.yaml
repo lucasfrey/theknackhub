@@ -1,6 +1,6 @@
 site:
   name: TheKnackHub
-  site: 'https://astrowind.vercel.app'
+  site: 'https://theknackhub.com'
   base: '/'
   trailingSlash: false
 
@@ -11,7 +11,7 @@ metadata:
   title:
     default: TheKnackHub
     template: '%s — TheKnackHub'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 TheKnackHub"
   robots:
     index: true
     follow: true
