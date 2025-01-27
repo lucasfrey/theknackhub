@@ -3,22 +3,22 @@ import { getPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Services',
+      text: 'Hubs',
       links: [
         {
           text: 'Accounting',
           href: getPermalink('/about'),
         },
         {
-          text: 'Airbnb management',
+          text: 'Admin',
+          href: getPermalink('/admin'),
+        },
+        {
+          text: 'Crafts',
           href: getPermalink('/about'),
         },
         {
-          text: 'Carpentry',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Home renovation',
+          text: 'Property',
           href: getPermalink('/about'),
         },
       ],
@@ -40,7 +40,7 @@ export const footerData = {
     {
       title: 'Product',
       links: [
-        { text: 'Accounting', href: '#' },
+        { text: 'Account', href: '#' },
         { text: 'Airbnb', href: '#' },
         { text: 'Home renovation', href: '#' },
       ],
@@ -60,7 +60,6 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/theknackhub/' },
   ],
 };

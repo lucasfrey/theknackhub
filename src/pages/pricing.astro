@@ -13,14 +13,14 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
+  <!-- HeroText Widget ******************* 
 
   <HeroText
     tagline="Pricing"
     title="Stellar Pricing for Every Journey"
     subtitle="Choose the perfect plan that aligns with your cosmic goals."
   />
-
+-->
   <!-- Pricing Widget ******************* -->
 
   <Prices
@@ -28,28 +28,14 @@ const metadata = {
     subtitle="Only pay for what you need"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
-        items: [
-          {
-            description: 'Etiam in libero, et volutpat',
-          },
-          {
-            description: 'Aenean ac nunc dolor tristique',
-          },
-          {
-            description: 'Cras scelerisque accumsan lib',
-          },
-          {
-            description: 'In hac habitasse',
-          },
-        ],
+        title: 'Admin',
+        subtitle: 'Anything admin related',
+        price: 40,
+        period: 'per hour',
         callToAction: {
           target: '_blank',
           text: 'Get started',
-          href: '#',
+          href: '/contact-us',
         },
       },
       {
@@ -80,7 +66,7 @@ const metadata = {
           href: '#',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: 'new',
       },
       {
         title: 'premium',
