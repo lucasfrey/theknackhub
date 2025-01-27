@@ -15,7 +15,7 @@ export const headerData = {
         },
         {
           text: 'Crafts',
-          href: getPermalink('/about'),
+          href: getPermalink('/crafts'),
         },
         {
           text: 'Property',
