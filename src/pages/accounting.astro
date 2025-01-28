@@ -1,75 +1,75 @@
 ---
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'Accounting',
 };
 ---
 
 <Layout metadata={metadata}>
   <Features2
-    title="The admin hub"
-    subtitle="Whether you need daily administrative support for your business or an uber efficient on call resource for a specific project, The Knack Hub can help you with:"
+    title="The Accounts Hub"
+    subtitle="From daily, weekly or monthly support with accounts payable for your business, The Knack Hub can assist with the following:"
     columns={3}
     items={[
       {
-        title: 'Managing operations',
+        title: 'Financial records',
         description:
-          'Overseeing daily operations, ensuring compliance with policies, and supporting strategic planning',
+          "Create, manage, and produce financial records that track cash flow and payments to vendors and suppliers. These records are important for a business's financial health.",
         icon: 'tabler:award',
       },
       {
-        title: 'Managing records',
-        description: 'Maintaining accurate records and ensuring information is easily accessible',
+        title: 'Record transactions',
+        description:
+          'Accurately and promptly record transactions. This requires good time management and attention to detail. ',
         icon: 'tabler:home-star',
       },
       {
-        title: 'Managing time',
-        description: `Prioritizing tasks, setting deadlines, and delegating responsibilities`,
+        title: 'Communication',
+        description: `Communicate with other departments and team members. Effective communication is important for establishing record-keeping procedures and collaborating on tasks.`,
         icon: 'tabler:clock',
       },
       {
-        title: 'Managing budgets',
-        description: 'Assisting with budgeting and payroll administration, and tracking expenses',
+        title: 'Supplier relationships',
+        description:
+          'Develop relationships with suppliers. Businesses often buy large amounts of goods from trusted suppliers, so effective account payable records are important for maintaining productive business relationships and resolving debts.',
         icon: 'tabler:shopping-cart',
       },
       {
-        title: 'Onboarding and offboarding employees',
-        description:
-          'Ensuring new hires have the necessary devices and applications to start work, and facilitating smooth transitions for employees leaving the organization',
+        title: 'Outstanding payments',
+        description: 'Follow up on outstanding payments.',
         icon: 'tabler:building-store',
       },
       {
-        title: 'Data Entry',
-        description:
-          'Handling scheduling, correspondence, data entry, file management, and updating computer records using a database',
+        title: 'Account reconciliation',
+        description: 'Reconcile monthly payable reports',
         icon: 'tabler:arrow-big-up-lines',
       },
       {
-        title: 'Events',
-        description: `Assisting in organizing meetings and events. Liaising with suppliers and contractors, ordering office supplies 
-`,
+        title: 'Queries',
+        description: `Respond to queries from customers, suppliers, and staff.`,
+        icon: 'tabler:sun',
+      },
+      {
+        title: 'Account discrepancies',
+        description: `Resolve account discrepancies by investigating documentation, issuing stop payments, and adjustments.`,
+        icon: 'tabler:sun',
+      },
+      {
+        title: 'Financial security',
+        description: `Maintain financial security by following internal accounting controls.`,
+        icon: 'tabler:sun',
+      },
+      {
+        title: 'Expense statements',
+        description: `Prepare monthly expense statements and financial reports.`,
         icon: 'tabler:sun',
       },
     ]}
-  />
-
-  <Hero
-    subtitle="How much it cost ?"
-    actions={[{ variant: 'primary', target: '_blank', text: 'Checkout pricing', href: '/pricing' }]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
-    }}
-  />
-
-  <!-- Content Widget **************** -->
-  <!-- 
+  >
+    <!-- 
   <Content
     isReversed
     items={[
@@ -108,9 +108,9 @@ const metadata = {
     </Fragment>
   </Content> -->
 
-  <!-- Content Widget **************** -->
-
-  <!-- <Content
+    <!-- Content Widget **************** -->
+    <!-- 
+  <Content
     isAfterContent
     items={[
       {
@@ -148,8 +148,8 @@ const metadata = {
     </Fragment>
   </Content> -->
 
-  <!-- Testimonials Widget *********** -->
-  <!-- 
+    <!-- Testimonials Widget *********** -->
+    <!-- 
   <Testimonials
     title="Words from real customers"
     testimonials={[
@@ -189,17 +189,18 @@ const metadata = {
     }}
   /> -->
 
-  <!-- CallToAction Widget *********** -->
-  <!-- 
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
-      },
-    ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
-  /> -->
+    <!-- CallToAction Widget *********** -->
+
+    <CallToAction
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Start exploring',
+          href: '/',
+        },
+      ]}
+      title="Dive into our template collection"
+      subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+    />
+  </Features2>
 </Layout>

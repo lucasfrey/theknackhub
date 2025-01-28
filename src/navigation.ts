@@ -7,7 +7,7 @@ export const headerData = {
       links: [
         {
           text: 'Accounting',
-          href: getPermalink('/about'),
+          href: getPermalink('/accounting'),
         },
         {
           text: 'Admin',
@@ -19,7 +19,7 @@ export const headerData = {
         },
         {
           text: 'Property',
-          href: getPermalink('/about'),
+          href: getPermalink('/property'),
         },
       ],
     },
