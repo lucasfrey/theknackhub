@@ -1,20 +1,7 @@
 ---
 import type { Form as Props } from '~/types';
 import Button from '~/components/ui/Button.astro';
-import { sendEmail } from '../../email';
-
-export async function post({ request }) {
-  const formData = await request.formData();
-  const email = formData.get('email');
-  const subject = formData.get('subject');
-  const message = formData.get('message');
-
-  await sendEmail(email, subject, message);
-
-  return {
-    body: JSON.stringify({ success: true }),
-  };
-}
+// import { sendEmail } from '../../email';
 
 const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } = Astro.props;
 const errors = { username: '', email: '', password: '' };
