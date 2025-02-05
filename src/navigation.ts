@@ -38,20 +38,19 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Hubs',
       links: [
-        { text: 'Account', href: '#' },
-        { text: 'Airbnb', href: '#' },
-        { text: 'Home renovation', href: '#' },
+        { text: 'Accounting', href: 'accounting' },
+        { text: 'Admin', href: 'admin' },
+        { text: 'Crafts', href: 'crafts' },
+        { text: 'Property', href: 'property' },
       ],
     },
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
+        { text: 'About', href: 'about' },
+        { text: 'Pricing', href: 'pricing' },
       ],
     },
   ],
