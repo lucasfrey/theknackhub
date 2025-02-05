@@ -32,7 +32,6 @@ export const headerData = {
       href: '/contact',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
