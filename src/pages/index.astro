@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
+import Content from '~/components/widgets/Content.astro';
 
 const metadata = {
   title: 'The Knack Hub - Services to busy individuals and businesses',
@@ -12,7 +13,7 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
+  <!-- 
   <Hero
     actions={[
       {
@@ -25,7 +26,36 @@ const metadata = {
   >
     <Fragment slot="title">Welcome to the knack hub</Fragment>
     <Fragment slot="subtitle"> What can I do for you today ? </Fragment>
-  </Hero>
+  </Hero> -->
+
+  <Content
+    isReversed
+    items={[]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1516972810927-80185027ca84?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      height: 500,
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Hello,</h3>
+      <p>
+        I am a passionate and creative spirit who thrives on transforming everyday materials into something
+        extraordinary.
+      </p>
+      <br />
+      <p>
+        Whether it's organising a home, making thoughtful gifts, or tackling a new challenge, my hands are always busy
+        bringing dreams to life.
+      </p>
+      <br />
+      <p>
+        Over the years, I've gained extensive experience in business administration and accounts, working with a variety
+        of companies and industries. My background also includes a strong foundation in Customer service, having spent
+        many years in operational management in the hotel industry.
+      </p>
+    </Fragment>
+  </Content>
 
   <!-- Note Widget ******************* -->
 
