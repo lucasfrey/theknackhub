@@ -53,11 +53,9 @@ export const footerData = {
       ],
     },
   ],
-  secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
-  ],
+  secondaryLinks: [{ text: 'theknackhub@gmail.com', href: 'mailto:theknackhub@gmail.com' }],
   socialLinks: [
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/theknackhub/' },
+    { ariaLabel: 'Email', icon: 'tabler:mail', href: 'mailto:theknackhub@gmail.com' },
   ],
 };

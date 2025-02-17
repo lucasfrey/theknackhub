@@ -1,44 +1,40 @@
 ---
 import type { Form as Props } from '~/types';
 import Button from '~/components/ui/Button.astro';
-// import { sendEmail } from '../../email';
 
-const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } = Astro.props;
+const { inputs, textarea, disclaimer, button = 'Contact me', description = '' } = Astro.props;
 const errors = { username: '', email: '', password: '' };
+
+export const prerender = false;
+
+type formData = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 if (Astro.request.method === 'POST') {
   try {
-    const data = await Astro.request.formData();
-    const name = data.get('name');
-    const email = data.get('email');
-    const message = data.get('message');
+    const formData = await Astro.request.formData();
+    const response = await fetch(Astro.url + '/api/sendEmail.json', {
+      method: 'POST',
+      body: formData,
+    });
 
-    if (typeof name !== 'string' || name.length < 1) {
-      errors.username += 'Please enter a username. ';
-    }
+    const data: formData = await response.json();
 
-    if (typeof email !== 'string' || email.length < 1) {
-      errors.username += 'Please enter an email. ';
-    }
-
-    if (typeof message !== 'string') {
-      errors.password += 'Please enter a message. ';
-    }
-
-    const hasErrors = Object.values(errors).some((msg) => msg);
-    if (!hasErrors) {
-      // await post({ name, email, message });
-      return Astro.redirect('/contact/success');
+    if (response.status === 200) {
+      console.log(data.message);
     }
   } catch (error) {
     if (error instanceof Error) {
-      console.error(error.message);
+      console.error(`Error: ${error.message}`);
     }
   }
 }
 ---
 
-<form action="/send-email" method="POST">
+<form method="POST">
   {
     inputs &&
       inputs.map(
